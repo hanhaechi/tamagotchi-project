@@ -46,7 +46,7 @@ _ reset own creature, quit the game
  	a) create the beast using random numbers (with max number being half of the sum of the current pet values)
 	b) if sum of beast values is higher than sum of pet values, pet dies automatically, else (if sum is equal or lower), pet wins.
 
-6. If while playing the game user gains 30 points in each area (food, happiness, energy), game is over.6
+6. If while playing the game user gains 30 points in each area (food, happiness, energy), game is over.
 
 7. If at any point during the game (from first action onwards), all the values are equal, pet dies
  
