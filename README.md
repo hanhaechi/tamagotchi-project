@@ -1,5 +1,5 @@
 # tamagotchi-project
-Digital pet game (web and command line interfaces). The first individual coding project 
+Digital pet game (web and command line interfaces). My first individual coding project 
 
 last updated: Jan 11, 2018
 
