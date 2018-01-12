@@ -1,0 +1,178 @@
+body, footer a {
+	color: #3e3e3e;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: #9c00d6;
+}
+
+.jumbotron {
+	background: linear-gradient(45deg, #00c371, #9c00d6);
+	margin-top: -10px;
+	padding-bottom: 30px;
+}
+
+.jumbotron h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 100;
+	padding-bottom: 10px;
+	margin-top: -30px;
+	font-size: 1.2rem;
+	font-weight: 300;
+	color: #003a72;
+	text-shadow:
+		-1px -1px 0 rgba(88, 69, 170, 0.5),
+		1px -1px 0 rgba(88, 69, 170, 0.5),
+		-1px 1px 0 rgba(88, 69, 170, 0.5),
+		1px 1px 0 rgba(88, 69, 170, 0.5)
+}
+
+#porg img {
+	width: 15%;
+	display: none;
+}
+
+.output {
+	margin-top: -15px;
+}
+
+
+
+
+/* BUTTON STYLING */
+
+.top_actions {
+	margin-top: -40px;
+}
+
+#actions a, #newGame {
+	height: 60px;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: 300;
+	color: #d4d4d4;
+}
+
+#actions a:active, #newGame:active {
+	color: #fff;
+	font-weight: 500;
+}
+
+#newGame {
+	background: linear-gradient(45deg, rgb(198, 1, 0), rgb(98, 11, 152));
+	border-color: #8b1155;
+	max-width: 200px;
+	margin-top: -10px;
+}
+
+#newGame:hover {
+	background: linear-gradient(45deg, rgb(168, 2, 1), rgb(68, 0, 110));
+}
+
+#newGame {
+	display: none;
+}
+
+.exits {
+	padding-bottom: 10px;
+	margin-top: 40px;
+}
+
+.btn-outline-light{
+	color: #d6d6d6;
+}
+
+#reset:hover {
+	color: #9c00d6;
+}
+
+#quit:hover {
+	color: #c60100;
+}
+
+
+
+/* SHOWING FEEDBACK */
+
+#battlesWon {
+	display: none;
+	font-size: 0.7rem;
+	font-weight: 300;
+	margin-right: 20px;
+	color: #6d6d6d;
+}
+
+.battleNumber {
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+
+#results {
+	padding: 20px 0px 0px;
+	text-align: center;
+}
+
+#results p{
+	font-weight: 600;
+	font-family: monospace;
+	font-size: 3rem;
+}
+
+.warnings {
+	margin-top: 10px;
+	padding-top: 15px;
+	background: rgba(142, 156, 199, 0.3);
+	color: #383838;
+}
+
+.warnings.negative {
+	background: #ff9f9f;
+}
+
+.warnings.positive {
+	background: #c1e0d3;
+}
+
+.warnings.winner{
+	background: #ff9800;
+}
+
+
+
+/* OTHER */ 
+
+footer p {
+	font-size: 0.8rem;
+}
+
+
+
+/* MEDIA QUERIES for sm screens */
+
+
+@media screen and (max-width: 575px) {
+	#porg img {
+		width: 30% !important;
+	}
+	
+	.jumbotron h1 {
+		margin-top: 10px !important;
+		font-size: 1.2rem;
+	}
+	
+	.smallScreen.jumbotron {
+		max-height: 300px;
+	}
+	
+	.smallScreen.jumbotron h1 {
+		margin-top: 0px !important;
+		padding-top: 20px !important;
+		font-size: 2rem !important;
+	}
+	
+	.smallScreen img{
+		min-width: 100% !important;
+	}
+}

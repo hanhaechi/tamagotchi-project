@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="HTML assignment for CVCC Bootcmap class">
+    <meta name="author" content="Modesta Naciute">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Mod's W8 assignment</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Custom styles for this html -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <main role="main">
+
+      <!-- Color and Image section -->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container container-fluid color_section">
+         <h1 class="caption">Collect 30 points in each area to win the game!</h1>
+        	<div id="porg">
+        		<img class="img-fluid rounded mx-auto d-block" style="display: none">
+        	</div>
+        </div>
+      </div>
+			
+     <!-- Feedback and button section -->
+      <div class="container output">
+        <div class="row justify-content-center">
+        	<div class="col col-sm-10 col-lg-7">
+           <div>
+           		<h2 class="name">noname</h2>
+           		<div class="top_actions float-right">
+								<span id="battlesWon">BATTLES WON:
+						 		<span class="battleNumber"></span></span>	
+         				<button id="battle" class="btn btn-sm btn-light">Fight First Order</button>
+          			<button id="newGame" class="btn btn-sm btn-block btn-info float-right">Create New PORG</button>
+						 </div>
+           </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+					<div class="col col-sm-10 col-lg-7">
+						<div id="results" class="row">
+							<div class="col">
+								<h6>HAPPINESS</h6>
+								<p id="happiness">:(</p>
+							</div>
+							<div class="col">
+								<h6>FOOD</h6>
+								<p id="food">:(</p>
+							</div>
+							<div class="col">
+								<h6>ENERGY</h6>
+								<p id="energy">:(</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col col-sm-10 col-lg-7">
+						<div id="actions" class="row">
+							<div class="col">
+								<p id="play"><a class="btn btn-sm btn-block btn-info disabled" role="button">PLAY</a></p>
+							</div>
+							<div class="col">
+								<p id="feed"><a class="btn btn-sm btn-block btn-info disabled" role="button">FEED</a></p>
+							</div>
+							<div class="col">
+								<p id="sleep"><a class="btn btn-sm btn-block btn-info disabled" role="button">SLEEP</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+       	<div class="row justify-content-center">
+					<div class="warnings col col-sm-10 col-lg-7">
+						<p>Watch for Porgy protectors' messages here</p>
+					</div>
+				</div>
+        <div class="row  justify-content-center">
+         <div class="col col-sm-10 col-lg-7">
+           <div class="exits">
+							<button id="reset" class="btn btn-sm btn-outline-light">Reset</button>
+							<button id="quit" class="btn btn-sm btn-outline-light" data-toggle="modal" data-target="#quitModal">Quit</button>
+           </div>
+          </div>
+        </div>
+       
+        <hr>
+
+      </div> <!-- /container -->
+			
+			<!-- Quit Modal -->
+			<div class="modal fade" id="quitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Want to quit?</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+						Click <strong>"Cancel"</strong> to go back to your lovely Porg, <strong>"Quit"</strong> to end the game (and get a desktop backgroud image with a porg almighty).
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+							<button id="quitConfirm" type="button" class="btn btn-dark">Quit</button>
+						</div>
+					</div>
+				</div>
+			</div> <!-- Enf of Quit Modal -->
+			
+			<!-- Name Modal -->
+			<div class="modal fade" id="nameModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">How do you want to name your Porg?</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form action="">
+								<div class="form-group">
+									<input type="text" class="form-control" id="answerNameInput" placeholder="Enter the name">
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+							<button id="porgNameSave" type="button" class="btn btn-info">Save</button>
+						</div>
+					</div>
+				</div>
+			</div> <!-- Enf of Quit Modal -->
+			
+    </main>
+
+    <footer class="container">
+      <p><a href="https://www.linkedin.com/in/modesta/" target="_blank">&copy; Modesta Naciute 2018</a></p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		<script src="tamagotchi.js"></script>
+		<script src="app.js"></script>
+  </body>
+</html>
