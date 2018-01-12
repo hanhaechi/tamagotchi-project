@@ -26,6 +26,7 @@ _ augment it's numbers by playing, feeding, sleeping
 _ engage in a digital battle with an invisible creature
 _ reset own creature, quit the game
 
+
 /// Logic side
 1. Prompt user for the name of the creature  > create new pet with values 5,5,5 for food, happiness, energy, show congratulatory message for the user
 
@@ -33,17 +34,17 @@ _ reset own creature, quit the game
   
 3. If checkImpactDeath() returns true: 
 	a) adjust values of the respective pet keys, give feedback on what action was performed and invoke checkForDanger() function to see if pet is in need of certain elements (food, happiness or water), and communicate that to the user, invoke checkForExcess()
-  b) checkForExcess() checks if some value is disproportionately high. If value reaches certain threshold (currently the deductionPoint is set to 20) and is higher than the sum of the other two values, call deductPoints() to deduct this sum from the highest value, and communicate that to the user
+	b) checkForExcess() checks if some value is disproportionately high. If value reaches certain threshold (currently the deductionPoint is set to 20) and is higher than the sum of the other two values, call deductPoints() to deduct this sum from the highest value, and communicate that to the user
 	
 4. If checkImpactDeath() returns false:
-	a) invoke preventDeath() to show feedback message, and to prevent from stalemate (when two of the values are dangerously low) invoke pet.boost() function.
+	a) invoke preventDeath() to show feedback message, and to prevent from stalemate (when two of the values are dangerously low) invoke pet.boost() function;
 	b) if preventDeath() was invoked 3 times in a row (= user tried to perform an action that would kill the pet):
-  c) check if the second lowest value is lower than life threshold. If it is lower, double the lowest parameter in value and show message to the user
-  d) if it's not lower than life threshold nicely suggest user to try another action 
+	c) check if the second lowest value is lower than life threshold. If it is lower, double the lowest parameter in value and show message to the user
+	d) if it's not lower than life threshold nicely suggest user to try another action 
 
  5. Battle with invisible creature
-  a) create the beast using random numbers (with max number being half of the sum of the current pet values)
-  b) if sum of beast values is higher than sum of pet values, pet dies automatically, else (if sum is equal or lower), pet wins.
+ 	a) create the beast using random numbers (with max number being half of the sum of the current pet values)
+	b) if sum of beast values is higher than sum of pet values, pet dies automatically, else (if sum is equal or lower), pet wins.
 
 6. If while playing the game user gains 30 points in each area (food, happiness, energy), game is over.6
 
