@@ -50,7 +50,9 @@ _ reset own creature, quit the game<br>
 6. If while playing the game user gains 30 points in each area (food, happiness, energy), game is over.<br>
 
 7. If at any point during the game (from first action onwards), all the values are equal, pet dies<br>
- 
+
+DISCLAIMER<br>
+This was not tested on other browsers than Chrome and could present some issues with responsiveness. Cross-browser compatibility and full responsiveness was not the goal of the project :) <br>
  
 Thanks for your time exploring my project!<br>
 
