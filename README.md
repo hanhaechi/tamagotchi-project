@@ -44,6 +44,7 @@ _ reset own creature, quit the game<br>
 	d) if it's not lower than life threshold nicely suggest user to try another action <br>
 
  5. Battle with invisible creature<br>
+
  	a) create the beast using random numbers (with max number being half of the sum of the current pet values)<br>
 	b) if sum of beast values is higher than sum of pet values, pet dies automatically, else (if sum is equal or lower), pet wins.<br>
 
@@ -51,10 +52,22 @@ _ reset own creature, quit the game<br>
 
 7. If at any point during the game (from first action onwards), all the values are equal, pet dies<br>
 
+
+## Docker
+To install with docker clone the repository and build the image, then create a container using the image using these commands.
+```
+git clone [https://github.com/hanhaechi/tamagotchi-project.git](https://github.com/CrestK/tamagotchi-project.git)
+cd tamagotchi-project
+sudo docker build -t tamogatchi .
+sudo docker run -p 4040:80 tamogatchi
+```
+Then open open up the ip of the computer with with 4040. Such as 0.0.0.0:4040
+
 DISCLAIMER<br>
 This was not tested on other browsers than Chrome and could present some issues with responsiveness. Cross-browser compatibility and full responsiveness was not the goal of the project :) <br>
  
 Thanks for your time exploring my project!<br>
 
 MODESTA NACIUTE<br>
+
 mnaciute@yahoo.com
